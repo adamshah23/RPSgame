@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(57, 141, 168);
+    position: center;
+}
+
+header{
+    background: white;
+    padding: 50px;
+}
+
+header > h1 {
+    color: #25272e;
+    text-align: center;
+    font-family: Asap, sans-serif;
+    font-size: 50px;
+}
+
+#action-message {
+    color:white;
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.score-board {
+    border: 6px solid white;
+    width: 300px;
+    margin: 20px auto;
+    color:white;
+    font-size: 46px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: Asap, sans-serif;
+    position: relative;
+}
+
+.badge {
+    background: #e2584d;
+    color: white;
+    font-size: 20px;
+    Padding: 2px 10px;
+    font-family: Asap, sans-serif;
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.results {
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    font-family: Asap, sans-serif;
+    font-weight:bold;
+    font-size: 55px;
+}
+
+.choices {
+    margin: 45px 0;
+    text-align: center;
+}
+
+.choice {
+    display: inline-block;
+    border: 10px solid white;
+    border-radius: 50%;
+    padding: 25px;
+    margin: 0 15px;
+    transition: all 0.3s ease; /* this is to create a delay in the hover */
+}
+
+.choice:hover { /* this is to get it to create a hover over the different rock paper scissors */
+    cursor: pointer;
+    background:white;
+}
+
+/* these are for the extra class in JS */
+.green-glow {
+    border: 8px solid lightgreen;
+    box-shadow: 0 0 12px green;
+}
+
+.red-glow {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
